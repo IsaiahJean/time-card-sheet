@@ -1,3 +1,10 @@
 # time-card-sheet
 
-#Time-sharmd-shmeet
+<<<<<<< HEAD
+#Time-card-sheet
+=======
+
+# pip install django
+# pip install djangorestframework
+# pip install django-corse-headers
+>>>>>>> dmitriy
