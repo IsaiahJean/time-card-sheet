@@ -12,4 +12,4 @@ class TimeCard(models.Model):
     time_out = models.TimeField()
     daytime_out = models.CharField(max_length=2)  # AM/PM
     hours_code = models.CharField(max_length=4)  # FBP/AMCO
-    hours_worked = models.DecimalField(max_digits=4, decimal_places=0)  # Calculated from Time in and Time out values
+    hours_worked = models.TimeField()  # Calculated from Time in and Time out values
