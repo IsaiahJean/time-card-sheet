@@ -19,4 +19,6 @@ from django.conf.urls import include, url
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^timecards/', include(('timeCard.urls', 'timeCard'), namespace='timeCard')),
+    url(r'^users/', include(('admin_users.urls', 'admin_users'), namespace='admin_users')),
+    url(r'^', include(('angularapi.urls', 'angularapi'), namespace='angularapi')),
 ]
