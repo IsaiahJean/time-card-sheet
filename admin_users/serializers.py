@@ -5,10 +5,11 @@ from django.contrib.auth.models import User
 
 class UserSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
+    id = serializers.IntegerField(read_only=True)
 
     class Meta:
         model = User
-        fields = ('first_name', 'last_name', 'username', 'email', 'password')
+        fields = ('id', 'first_name', 'last_name', 'username', 'email', 'password')
 
     def create(self, validated_data):
         user = super(UserSerializer, self).create(validated_data)
@@ -23,3 +24,9 @@ class UserDescrSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserDescription
         fields = ('user', 'description')
+
+
+class AddDescriptionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UserDescription
+        fields = "__all__"
