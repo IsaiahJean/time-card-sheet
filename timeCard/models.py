@@ -1,6 +1,5 @@
 from django.db import models
-from angularapi.models import Doctor
-
+from doctor.models import Doctor
 # Create your models here.
 
 
