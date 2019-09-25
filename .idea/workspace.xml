@@ -33,8 +33,12 @@
       <change beforePath="$PROJECT_DIR$/report/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/report/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/timeCard/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/timeCard/models.py" afterDir="false" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/timeCard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/timeCard/urls.py" afterDir="false" />
 >>>>>>> dmitriy
+=======
+      <change beforePath="$PROJECT_DIR$/timeCard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/timeCard/views.py" afterDir="false" />
+>>>>>>> 98223af175b4851aa598fd845bd0bd07c3210351
 =======
       <change beforePath="$PROJECT_DIR$/timeCard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/timeCard/views.py" afterDir="false" />
 >>>>>>> 98223af175b4851aa598fd845bd0bd07c3210351
@@ -117,6 +121,7 @@
   </component>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -129,6 +134,8 @@
     </breakpoint-manager>
   </component>
 >>>>>>> dmitriy
+=======
+>>>>>>> 98223af175b4851aa598fd845bd0bd07c3210351
 =======
 >>>>>>> 98223af175b4851aa598fd845bd0bd07c3210351
 </project>
