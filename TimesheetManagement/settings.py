@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'admin_users',
     'angularapi',
+    'reglog',
 ]
 
 MIDDLEWARE = [

@@ -1,9 +1,11 @@
 from django.db import models
+from angularapi.models import Doctor
 
 # Create your models here.
 
 
 class TimeCard(models.Model):
+    file_number = models.ForeignKey(Doctor, on_delete=models.CASCADE)  # Connected with Doctors table
     date = models.DateField()  # Current Date
     sector = models.CharField(max_length=5)  # West or East
     location = models.CharField(max_length=15)

@@ -4,7 +4,6 @@ from rest_framework.response import Response
 from . models import UserDescription
 from . serializers import UserDescrSerializer, UserSerializer, AddDescriptionSerializer, ESerializer
 from django.contrib.auth.models import User
-from rest_framework import generics
 
 # All users with description
 @api_view(['GET'])
@@ -23,7 +22,7 @@ def p_user(request):
     else:
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-# Get user by username
+# Get user without description by username, where username = email(!!!)
 @api_view(['GET'])
 def g_user(request, username):
     try:
@@ -33,7 +32,7 @@ def g_user(request, username):
     serializer = UserSerializer(user)
     return Response(serializer.data)
 
-# Add description to user
+# Add description to existing user
 @api_view(['POST'])
 def p_description(request):
     serializer = AddDescriptionSerializer(data=request.data)
@@ -61,7 +60,7 @@ def edit_description(request, id_user):
         serializer = ESerializer(user)
         return Response(serializer.data)
 
-
+# Edit, get, and delete user
 @api_view(['PATCH', 'GET', 'DELETE'])
 def edit_user(request, id_user):
     try:
