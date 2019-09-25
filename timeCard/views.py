@@ -7,7 +7,7 @@ from . serializers import TimeCardSerializer
 
 # Create your views here.
 
-
+# List of existing cards and add new card to list
 @api_view(['GET', 'POST'])
 def gaTimeCards(request):
     if request.method == 'GET':
@@ -23,7 +23,7 @@ def gaTimeCards(request):
         else:
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-
+# Get, put, and delete one card
 @api_view(['GET', 'PUT', 'DELETE'])
 def gudTimeCard(request, card_id):
     try:
