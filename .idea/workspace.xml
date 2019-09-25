@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="1197f304-b9f3-4dbf-bf72-ad1da692c7cc" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/projectapi/angularapi/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/projectapi/angularapi/admin.py" afterDir="false" />
@@ -20,6 +21,17 @@
       <change afterPath="$PROJECT_DIR$/projectapi/projectapi/urls.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/projectapi/projectapi/wsgi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+    <list default="true" id="1fd4b341-5fa5-450a-8df5-541aed032d5e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/time-card-sheet.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timeCard/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/timeCard/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timeCard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/timeCard/urls.py" afterDir="false" />
+>>>>>>> dmitriy
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +39,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -34,6 +47,21 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1RExfLQxIMYIgj8miioNi6pi0yP" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+>>>>>>> dmitriy
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -52,11 +80,19 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="1197f304-b9f3-4dbf-bf72-ad1da692c7cc" name="Default Changelist" comment="" />
       <created>1569263624605</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569263624605</updated>
+=======
+      <changelist id="1fd4b341-5fa5-450a-8df5-541aed032d5e" name="Default Changelist" comment="" />
+      <created>1569246159199</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569246159199</updated>
+>>>>>>> dmitriy
     </task>
     <servers />
   </component>
@@ -71,4 +107,17 @@
       </map>
     </option>
   </component>
+<<<<<<< HEAD
+=======
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/timeCard/urls.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+>>>>>>> dmitriy
 </project>
