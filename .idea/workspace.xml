@@ -23,15 +23,21 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 =======
     <list default="true" id="1fd4b341-5fa5-450a-8df5-541aed032d5e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/time-card-sheet.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TimesheetManagement/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/TimesheetManagement/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TimesheetManagement/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/TimesheetManagement/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin_users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_users/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin_users/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin_users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin_users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/report/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/timeCard/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/timeCard/models.py" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/timeCard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/timeCard/urls.py" afterDir="false" />
 >>>>>>> dmitriy
+=======
+      <change beforePath="$PROJECT_DIR$/timeCard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/timeCard/views.py" afterDir="false" />
+>>>>>>> 98223af175b4851aa598fd845bd0bd07c3210351
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,12 +107,15 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   <component name="XDebuggerManager">
@@ -120,4 +129,6 @@
     </breakpoint-manager>
   </component>
 >>>>>>> dmitriy
+=======
+>>>>>>> 98223af175b4851aa598fd845bd0bd07c3210351
 </project>

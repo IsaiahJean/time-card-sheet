@@ -18,5 +18,8 @@ from django.conf.urls import include, url
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^timecards/', include(('timeCard.urls', 'timeCard'), namespace='timeCard')),
+    url(r'^timecards/', include(('timeCard.urls', 'timeCard'), namespace='timeCard')),  # TimeCard app, see TimeCard.urls for more options
+    url(r'^users/', include(('admin_users.urls', 'admin_users'), namespace='admin_users')),  # admin_users app, see admin_users.urls for more options
+    url(r'^api/', include(('angularapi.urls', 'angularapi'), namespace='angularapi')),  # Locations' and doctors' stuff
+    url(r'^$', include(('reglog.urls', 'reglog'), namespace='reglog')),  # Login
 ]
