@@ -20,6 +20,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^timecards/', include(('timeCard.urls', 'timeCard'), namespace='timeCard')),  # TimeCard app, see TimeCard.urls for more options
     url(r'^users/', include(('admin_users.urls', 'admin_users'), namespace='admin_users')),  # admin_users app, see admin_users.urls for more options
-    url(r'^api/', include(('angularapi.urls', 'angularapi'), namespace='angularapi')),  # Locations' and doctors' stuff
-    url(r'^$', include(('reglog.urls', 'reglog'), namespace='reglog')),  # Login
+	url(r'^doctors/', include(('doctor.urls', 'doctor'), namespace='doctor')),  # doctors app
+    url(r'^locations/', include(('location.urls', 'location'), namespace='location')),  # location app
+    url(r'^api/', include('api.urls')),
 ]
