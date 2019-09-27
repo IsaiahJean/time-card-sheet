@@ -15,8 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.conf.urls import include, url
+from rest_framework.authtoken.views import ObtainAuthToken
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^timecards/', include(('timeCard.urls', 'timeCard'), namespace='timeCard')),
+    url(r'^doctors/', include(('doctor.urls', 'doctor'), namespace='doctor')),
+    url(r'^locations/', include(('location.urls', 'location'), namespace='location')),
+    url(r'^api/', include('api.urls')),
+    url(r'^auth/', ObtainAuthToken.as_view())
+
+
 ]
