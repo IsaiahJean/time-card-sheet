@@ -5,28 +5,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TimesheetManagement/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/TimesheetManagement/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TimesheetManagement/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/TimesheetManagement/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularapi/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularapi/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularapi/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularapi/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularapi/migrations/0002_auto_20190923_1106.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularapi/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularapi/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularapi/serializer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularapi/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularapi/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angularapi/views.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reglog/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reglog/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reglog/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reglog/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reglog/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reglog/serializer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reglog/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reglog/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reglog/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/timeCard/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/timeCard/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doctor/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/doctor/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/report/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/report/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/report/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/report/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,5 +69,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/location/urls.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
