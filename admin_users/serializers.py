@@ -1,6 +1,8 @@
 from rest_framework import serializers
 from . models import UserDescription
 from django.contrib.auth.models import User
+from rest_framework.authtoken.models import Token
+
 
 # Serialize User object from auth_user
 class UserSerializer(serializers.ModelSerializer):
@@ -14,6 +16,7 @@ class UserSerializer(serializers.ModelSerializer):
         user = super(UserSerializer, self).create(validated_data)
         user.set_password(validated_data['password'])
         user.save()
+        Token.objects.create(user=user)
         return user
 
 # Serialize description, used to get all users with description

@@ -1,12 +1,17 @@
 from rest_framework import status
-from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from . models import UserDescription
 from . serializers import UserDescrSerializer, UserSerializer, AddDescriptionSerializer, ESerializer
 from django.contrib.auth.models import User
 
+
+
+
 # All users with description
 @api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def g_users(request):
     user_description = UserDescription.objects.all()
     serializer = UserDescrSerializer(user_description, many=True)
@@ -14,6 +19,7 @@ def g_users(request):
 
 # Add user without description
 @api_view(['POST'])
+@permission_classes([IsAuthenticated])
 def p_user(request):
     serializer = UserSerializer(data=request.data)
     if serializer.is_valid():
@@ -24,6 +30,7 @@ def p_user(request):
 
 # Get user without description by username, where username = email(!!!)
 @api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def g_user(request, username):
     try:
         user = User.objects.get(username=username)
@@ -34,6 +41,7 @@ def g_user(request, username):
 
 # Add description to existing user
 @api_view(['POST'])
+@permission_classes([IsAuthenticated])
 def p_description(request):
     serializer = AddDescriptionSerializer(data=request.data)
     if serializer.is_valid():
@@ -44,6 +52,7 @@ def p_description(request):
 
 # Edit and Get description
 @api_view(['PATCH', 'GET'])
+@permission_classes([IsAuthenticated])
 def edit_description(request, id_user):
     try:
         user = UserDescription.objects.get(id=id_user)
@@ -62,6 +71,7 @@ def edit_description(request, id_user):
 
 # Edit, get, and delete user
 @api_view(['PATCH', 'GET', 'DELETE'])
+@permission_classes([IsAuthenticated])
 def edit_user(request, id_user):
     try:
         userD = UserDescription.objects.get(id=id_user)
