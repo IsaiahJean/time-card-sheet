@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from .serializers import TimeCardSerializers
+from rest_framework import generics
 
-# Create your views here.
+from timeCard.models import TimeCard
+
+
+class PostReport (generics.ListAPIView):
+    queryset = TimeCard.objects.all()
+    serializer_class = TimeCardSerializers

@@ -1,7 +1,7 @@
 from django.conf.urls import url
-from . import views
+from .views import PostReport
 
 
 urlpatterns = [
-    url(r'^(')
+    url(r'', PostReport.as_view(), name="post_report"),
 ]

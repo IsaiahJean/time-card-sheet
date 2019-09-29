@@ -6,7 +6,10 @@ from .serializers import UserSerializer
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5ddae3ea90fb26dfb6c9cd3b986eca70911470b3
 class UserViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows users to be viewed or edited.
