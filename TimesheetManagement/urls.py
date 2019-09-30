@@ -15,13 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.conf.urls import include, url
+from rest_framework.authtoken.views import ObtainAuthToken
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^timecards/', include(('timeCard.urls', 'timeCard'), namespace='timeCard')),  # TimeCard app, see TimeCard.urls for more options
-    url(r'^users/', include(('admin_users.urls', 'admin_users'), namespace='admin_users')),  # admin_users app, see admin_users.urls for more options
-	url(r'^doctors/', include(('doctor.urls', 'doctor'), namespace='doctor')),  # doctors app
+    url(r'^timecards/', include(('timeCard.urls', 'timeCard'), namespace='timeCard')),
+    # TimeCard app, see TimeCard.urls for more options
+    url(r'^users/', include(('admin_users.urls', 'admin_users'), namespace='admin_users')),
+    # admin_users app, see admin_users.urls for more options
+    url(r'^doctors/', include(('doctor.urls', 'doctor'), namespace='doctor')),  # doctors app
     url(r'^locations/', include(('location.urls', 'location'), namespace='location')),  # location app
     url(r'^report/', include(('report.urls', 'report'), namespace='report')),  # get report
     url(r'^api/', include('api.urls')),
+    url(r'^auth/', ObtainAuthToken.as_view()),
 ]

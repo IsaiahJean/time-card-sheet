@@ -3,12 +3,16 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from . models import TimeCard
 from . serializers import TimeCardSerializer
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.response import Response
 
 
 # Create your views here.
 
 # List of existing cards and add new card to list
 @api_view(['GET', 'POST'])
+@permission_classes([IsAuthenticated])
 def gaTimeCards(request):
     if request.method == 'GET':
         timeCards = TimeCard.objects.all()
@@ -25,6 +29,7 @@ def gaTimeCards(request):
 
 # Get, put, and delete one card
 @api_view(['GET', 'PUT', 'DELETE'])
+@permission_classes([IsAuthenticated])
 def gudTimeCard(request, card_id):
     try:
         timeCard = TimeCard.objects.get(pk=card_id)
